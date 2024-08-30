@@ -13,7 +13,7 @@ import os
 class FaultDiagnos:
     def __init__(self):
         # 初始化ROS节点
-        rospy.init_node('fault_observer', anonymous=True)
+        rospy.init_node('fault_Diagnos', anonymous=True)
         
         # 订阅电机推力话题
         self.motor_thrust_sub = rospy.Subscriber('/geometric/motorthrust', Float64MultiArray, self.motor_thrust_callback, queue_size=1)
